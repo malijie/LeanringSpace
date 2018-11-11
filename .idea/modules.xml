@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CommonLib/CommonLib.iml" filepath="$PROJECT_DIR$/CommonLib/CommonLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeanringSpace.iml" filepath="$PROJECT_DIR$/LeanringSpace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MathApp/MathApp.iml" filepath="$PROJECT_DIR$/MathApp/MathApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PayLib/PayLib.iml" filepath="$PROJECT_DIR$/PayLib/PayLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PoliticsExam/PoliticsExam.iml" filepath="$PROJECT_DIR$/PoliticsExam/PoliticsExam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/playerview/playerview.iml" filepath="$PROJECT_DIR$/playerview/playerview.iml" />
+    </modules>
+  </component>
+</project>

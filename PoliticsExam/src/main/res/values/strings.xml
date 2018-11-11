@@ -1,0 +1,5 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">考研政治</string>
+    <string name="answer_not_null">请选择一个答案...</string>
+    <string name="exit_tip">再按一次讲退出考研政治</string>
+</resources>
