@@ -14,7 +14,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="第一章 马克思主义是关于误差阶级"
-                android:textSize="@dimen/font_size_14"
+                android:textSize="@dimen/font_size_16"
                 style="@style/VideoExpandListItemTextStyle"/>
         <TextView
             android:id="@+id/id_video_expand_item_text_length"
@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             tools:text="22分43秒"
             android:layout_alignParentRight="true"
-            android:textSize="@dimen/font_size_14"
+            android:textSize="@dimen/font_size_16"
             android:layout_marginRight="10dp"
             style="@style/VideoExpandListItemTextStyle"/>
 

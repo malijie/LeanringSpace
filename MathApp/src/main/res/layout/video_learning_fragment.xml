@@ -35,10 +35,12 @@
     </RelativeLayout>
 
 
-    <ExpandableListView
+    <ListView
         android:id="@+id/id_video_learning_lv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         android:background="@color/background_white"/>
 
 </LinearLayout>

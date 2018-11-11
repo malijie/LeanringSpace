@@ -21,7 +21,7 @@ public class IjkFullscreenActivity extends AppCompatActivity {
 
         VideoInfo videoInfo = (VideoInfo) getIntent().getSerializableExtra("videoInfo");
 
-        Glide.with(this).load(IMAGE_URL).fitCenter().into(mPlayerView.mPlayerThumb);
+//        Glide.with(this).load(IMAGE_URL).fitCenter().into(mPlayerView.mPlayerThumb);
 
         mPlayerView.init()
                 .alwaysFullScreen()

@@ -3,12 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <ListView
-        android:id="@+id/id_exam_lv"
+    <!--<ListView-->
+        <!--android:id="@+id/id_exam_lv"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:divider="@color/app_grey"-->
+        <!--android:dividerHeight="1dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:scrollbars="none"/>-->
+    <ImageView
+        android:id="@+id/test_exam"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@color/app_grey"
-        android:dividerHeight="1dp"
-        android:layout_margin="10dp"
-        android:scrollbars="none"/>
+        android:layout_height="match_parent" />
 </RelativeLayout>
