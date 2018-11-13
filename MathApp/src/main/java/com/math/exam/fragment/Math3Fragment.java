@@ -48,8 +48,6 @@ public class Math3Fragment extends BaseFragment{
 
     private void initView(View v) {
         mListView = (ListView) v.findViewById(R.id.id_video_learning_lv);
-        mBtnLearn = (Button) v.findViewById(R.id.id_video_btn_start_learn);
-        mTextVideoName = (TextView) v.findViewById(R.id.id_video_text_start_learn);
         mListView.setAdapter(new MathAdapter(VIDEO_ITEM,VIDEO_URL,VIDEO_LENGTH));
 
 //        mBtnLearn.setOnClickListener(new View.OnClickListener() {

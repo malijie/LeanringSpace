@@ -18,6 +18,7 @@ import com.math.exam.fragment.Math3Fragment;
 import com.math.exam.fragment.UserFragment;
 import com.math.exam.fragment.Math1Fragment;
 import com.pay.lib.wap.WapManager;
+import com.wanpu.pay.PayConnect;
 
 
 /**
@@ -68,7 +69,7 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
     public void initData() {
         if(PermissionController.checkPermission(this)){
             WapManager.getInstance(this);
-//            PayConnect.getInstance(this);
+            PayConnect.getInstance(this);
         }
     }
 
@@ -142,8 +143,8 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
         hideFragments(transaction);
         switch (index) {
             case 0:
-                mMath1Image.setImageResource(R.mipmap.play);
-                mMath1Text.setTextColor(getResColor(R.color.font_green));
+                mMath1Image.setImageResource(R.mipmap.math1_selected);
+                mMath1Text.setTextColor(getResColor(R.color.font_green_selected));
                 mTextTitle.setText("高等数学");
                 if (mMath1Fragment == null) {
                     // 如果ContactsFragment为空，则创建一个并添加到界面上
@@ -156,8 +157,8 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
                 break;
             case 1:
                 // 当点击了考试tab时，改变控件的图片和文字颜色
-                mMath2Image.setImageResource(R.mipmap.exam_normal);
-                mMath2Text.setTextColor(getResColor(R.color.font_green));
+                mMath2Image.setImageResource(R.mipmap.math2_selected);
+                mMath2Text.setTextColor(getResColor(R.color.font_green_selected));
                 mTextTitle.setText("线性代数");
                 if (mMath2Fragment == null) {
                     // 如果ContactsFragment为空，则创建一个并添加到界面上
@@ -170,8 +171,8 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
                 break;
             case 2:
                 // 当点击了用户tab时，改变控件的图片和文字颜色
-                mMath3Image.setImageResource(R.mipmap.user_unselected);
-                mMath3Text.setTextColor(getResColor(R.color.font_green));
+                mMath3Image.setImageResource(R.mipmap.math3_selected);
+                mMath3Text.setTextColor(getResColor(R.color.font_green_selected));
                 mTextTitle.setText("概率与数理统计");
                 if (mMath3Fragment == null) {
                     // 如果NewsFragment为空，则创建一个并添加到界面上
@@ -184,9 +185,9 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
                 break;
             case 3:
                 // 当点击了用户tab时，改变控件的图片和文字颜色
-                mUserImage.setImageResource(R.mipmap.user_unselected);
-                mUserText.setTextColor(getResColor(R.color.font_green));
-                mTextTitle.setText("概率与数理统计");
+                mUserImage.setImageResource(R.mipmap.user_select);
+                mUserText.setTextColor(getResColor(R.color.font_green_selected));
+                mTextTitle.setText("我的考研");
                 if (mUserFragment == null) {
                     // 如果NewsFragment为空，则创建一个并添加到界面上
                     mUserFragment = new UserFragment();
@@ -206,17 +207,17 @@ public class HomePageActivity extends BaseActivity implements View.OnClickListen
      * 清除掉所有的选中状态。
      */
     private void clearSelection() {
-        mMath1Image.setImageResource(R.mipmap.play_select);
-        mMath1Text.setTextColor(getResColor(R.color.font_green_selected));
+        mMath1Image.setImageResource(R.mipmap.math1_normal);
+        mMath1Text.setTextColor(getResColor(R.color.font_green));
 
-        mMath2Image.setImageResource(R.mipmap.exam_select);
-        mMath2Text.setTextColor(getResColor(R.color.font_green_selected));
+        mMath2Image.setImageResource(R.mipmap.math2_normal);
+        mMath2Text.setTextColor(getResColor(R.color.font_green));
 
-        mMath3Image.setImageResource(R.mipmap.exam_select);
-        mMath3Text.setTextColor(getResColor(R.color.font_green_selected));
+        mMath3Image.setImageResource(R.mipmap.math3_normal);
+        mMath3Text.setTextColor(getResColor(R.color.font_green));
 
-        mUserImage.setImageResource(R.mipmap.user_select);
-        mUserText.setTextColor(getResColor(R.color.font_green_selected));
+        mUserImage.setImageResource(R.mipmap.user_unselected);
+        mUserText.setTextColor(getResColor(R.color.font_green));
     }
 
     /**

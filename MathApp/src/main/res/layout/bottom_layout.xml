@@ -26,7 +26,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/play" />
+                    android:src="@mipmap/math1_normal" />
 
                 <TextView
                     android:id="@+id/math1_text"
@@ -55,7 +55,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/play" />
+                    android:src="@mipmap/math2_normal" />
 
                 <TextView
                     android:id="@+id/math2_text"
@@ -86,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/exam_normal" />
+                    android:src="@mipmap/math3_normal" />
 
                 <TextView
                     android:id="@+id/math3_text"

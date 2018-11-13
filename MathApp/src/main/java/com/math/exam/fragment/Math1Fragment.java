@@ -58,8 +58,6 @@ public class Math1Fragment extends BaseFragment{
 
     private void initView(View v) {
         mListView = (ListView) v.findViewById(R.id.id_video_learning_lv);
-        mBtnLearn = (Button) v.findViewById(R.id.id_video_btn_start_learn);
-        mTextVideoName = (TextView) v.findViewById(R.id.id_video_text_start_learn);
         mListView.setAdapter(new MathAdapter(VIDEO_ITEM,VIDEO_URL,VIDEO_LENGTH));
 
 //        mBtnLearn.setOnClickListener(new View.OnClickListener() {
@@ -81,29 +79,6 @@ public class Math1Fragment extends BaseFragment{
 
     }
 
-//    private void showPayTip() {
-//        final CustomDialog dialog = new CustomDialog(getActivity(), PayBaseInfo.ITEM_POLITICS_VIDEO,PayBaseInfo.ITEM_POLITICS_VIDEO_DESCR);
-//        dialog.setButtonClickListener(new CustomDialog.DialogButtonListener() {
-//            @Override
-//            public void onConfirm() {
-//                if(PermissionController.checkPermission(getActivity())){
-//                    mPayManager.payForPoliticsVideo();
-//                    dialog.dissmiss();
-//                }else{
-//                    ToastManager.showLongMsg("未打开权限，请到设置-应用中打开相关权限后完成支付");
-//                    dialog.dissmiss();
-//                }
-//
-//            }
-//
-//            @Override
-//            public void onCancel() {
-//                dialog.dissmiss();
-//            }
-//        });
-//        dialog.show();
-//    }
-//
     private void initData(){
         mPayManager = PayManager.getInstace(getActivity());
     }

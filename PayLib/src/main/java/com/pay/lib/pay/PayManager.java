@@ -57,6 +57,11 @@ public class PayManager extends PayBaseInfo implements IPayType{
 
     }
 
+    @Override
+    public void payForMathVideo() {
+
+    }
+
     private class MyPayResultListener implements PayResultListener {
         private int payGoods = 1;
         MyPayResultListener(int payGoods){
@@ -79,6 +84,8 @@ public class PayManager extends PayBaseInfo implements IPayType{
                     SharedPreferenceUtil.savePayedQuestionStatus(true);
                 }else if(payGoods == POLITICS_VIDEO){
                     SharedPreferenceUtil.savePayedVideoStatus(true);
+                }else if(payGoods == POLITICS_VIDEO){
+
                 }
             } else {
                 ToastManager.showShortMsg("购买失败");

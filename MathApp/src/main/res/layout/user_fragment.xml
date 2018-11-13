@@ -3,17 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
-
+    android:gravity="center"
+    android:background="@color/background_white">
     <Button
-        android:id="@+id/id_user_fragment_btn_questions"
+        android:id="@+id/id_user_fragment_btn_history"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
-        android:text="我的错题"
+        android:text="最近观看"
         android:textSize="20sp"
+        android:textColor="@color/font_green_selected"
         android:background="@drawable/rounded_button_selector"/>
 
 
@@ -26,6 +27,7 @@
         android:layout_marginTop="20dp"
         android:text="软件更新"
         android:textSize="20sp"
+        android:textColor="@color/font_green_selected"
         android:background="@drawable/rounded_button_selector"/>
 
     <Button
@@ -37,6 +39,7 @@
         android:layout_marginTop="20dp"
         android:text="用户反馈"
         android:textSize="20sp"
+        android:textColor="@color/font_green_selected"
         android:background="@drawable/rounded_button_selector"/>
 
     <Button
@@ -47,6 +50,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"
         android:text="关于我们"
+        android:textColor="@color/font_green_selected"
         android:textSize="20sp"
         android:background="@drawable/rounded_button_selector"/>
 

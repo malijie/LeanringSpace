@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.common.lib.util.IntentManager;
 import com.math.exam.R;
+import com.math.exam.activity.AboutActivity;
 import com.pay.lib.wap.WapManager;
 
 
@@ -29,7 +30,6 @@ public class UserFragment extends Fragment {
         mButtonFeedback = (Button) messageLayout.findViewById(R.id.id_user_fragment_btn_feedback);
         mButtonAbout = (Button) messageLayout.findViewById(R.id.id_user_fragment_btn_about);
         mButtonUpdate = (Button) messageLayout.findViewById(R.id.id_user_fragment_btn_update);
-        mButtonWrongQuestion = (Button) messageLayout.findViewById(R.id.id_user_fragment_btn_questions);
         final WapManager wapManager = WapManager.getInstance(getActivity());
 
 
@@ -40,12 +40,13 @@ public class UserFragment extends Fragment {
             }
         });
 
-//        mButtonAbout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                wapManager.about(getActivity(),AboutActivity.class);
-//            }
-//        });
+        mButtonAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                wapManager.about(getActivity(),AboutActivity.class);
+
+            }
+        });
 
         mButtonUpdate.setOnClickListener(new View.OnClickListener() {
             @Override

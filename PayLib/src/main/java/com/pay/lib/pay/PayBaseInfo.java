@@ -17,4 +17,9 @@ public class PayBaseInfo {
     public static final String ITEM_POLITICS_QUESTION = "2019考研政治题库";
     public static final String ITEM_POLITICS_QUESTION_DESCR = "只需9.9元，购买考研政治题库";
     public static final float POLITICS_QUESTION_PRICE = 9.9f;
+
+    //考研数学名师强化
+    public static final String ITEM_MATH_VIDEO = "2019考研数学名师强化课";
+    public static final String ITEM_MATH_VIDEO_DESCR = "限时优惠原价219，现只需79元，购买名师辅导强化课";
+    public static final float MATH_VIDEO_PRICE = 79f;
 }
