@@ -1,6 +1,5 @@
 package com.pay.lib.pay;
 
-import com.wanpu.pay.PayConnect;
 
 /**
  * Created by malijie on 2018/11/4.

@@ -20,6 +20,7 @@ import com.dl7.player.activity.IjkFullscreenActivity;
 import com.dl7.player.entity.VideoInfo;
 import com.math.exam.R;
 import com.math.exam.base.Data;
+import com.math.exam.base.VideoManager;
 import com.pay.lib.pay.PayBaseInfo;
 import com.pay.lib.pay.PayManager;
 
@@ -133,18 +134,24 @@ public class Math3Fragment extends BaseFragment{
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    VideoInfo videoInfo  = new VideoInfo();
+                    videoInfo.setUrl(VIDEO_URL[i]);
+                    videoInfo.setName(VIDEO_ITEM[i]);
+
                     if (i >= 1) {
                         if (!mPayManager.hasPayedMath3Video()) {
                             showPayTip();
                         } else {
                             if (PermissionController.checkPermission(getActivity())) {
                                 startGoPlay(i);
+                                VideoManager.saveCurrentInfo(videoInfo);
                             }
 
                         }
 
                     }else{
                         startGoPlay(i);
+                        VideoManager.saveCurrentInfo(videoInfo);
                     }
                 }
                     
