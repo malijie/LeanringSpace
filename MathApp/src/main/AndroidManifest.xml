@@ -9,6 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:name="MathApp">
+        <meta-data
+            android:name="APP_ID"
+            android:value="92e45510ea5ac7295861d76a93ba16f1" />
+        <meta-data
+            android:name="APP_PID"
+            android:value="yingyongbao" />
+
         <activity android:name=".activity.HomePageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

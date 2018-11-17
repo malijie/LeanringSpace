@@ -9,7 +9,8 @@ public interface IPayType {
     int POLITICS_VIDEO = 2;
     int MATH_VIDEO = 3;
 
+
     void payForPoliticsVideo();
     void payForPoliticsQuestions();
-    void payForMathVideo();
+    void payForMathVideo(int type);
 }

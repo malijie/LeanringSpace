@@ -7,6 +7,10 @@ import com.wanpu.pay.PayConnect;
  */
 
 public class PayBaseInfo {
+    public static final int MATH1 = 1;
+    public static final int MATH2 = 2;
+    public static final int MATH3 = 3;
+
 
     //考研政治名师强化
     public static final String ITEM_POLITICS_VIDEO = "2019考研政治名师强化课";
@@ -18,8 +22,18 @@ public class PayBaseInfo {
     public static final String ITEM_POLITICS_QUESTION_DESCR = "只需9.9元，购买考研政治题库";
     public static final float POLITICS_QUESTION_PRICE = 9.9f;
 
-    //考研数学名师强化
-    public static final String ITEM_MATH_VIDEO = "2019考研数学名师强化课";
-    public static final String ITEM_MATH_VIDEO_DESCR = "限时优惠原价219，现只需79元，购买名师辅导强化课";
-    public static final float MATH_VIDEO_PRICE = 79f;
+    //考研数学-高等数学-名师强化
+    public static final String ITEM_MATH1_VIDEO = "2019考研数学名师基础强化-高等数学";
+    public static final String ITEM_MATH1_VIDEO_DESCR = "张宇老师主讲限时优惠，仅售39￥";
+    public static final float MATH1_VIDEO_PRICE = 39f;
+
+    //考研数学-线性代数-名师强化
+    public static final String ITEM_MATH2_VIDEO = "2019考研数学名师基础强化-线性代数";
+    public static final String ITEM_MATH2_VIDEO_DESCR = "李永乐老师主讲限时优惠，仅售39￥";
+    public static final float MATH2_VIDEO_PRICE = 39f;
+
+    //考研数学-概率统计-名师强化
+    public static final String ITEM_MATH3_VIDEO = "2019考研数学名师基础强化-高等数学";
+    public static final String ITEM_MATH3_VIDEO_DESCR = "汤家凤老师主讲限时优惠，仅售39￥";
+    public static final float MATH3_VIDEO_PRICE = 39f;
 }

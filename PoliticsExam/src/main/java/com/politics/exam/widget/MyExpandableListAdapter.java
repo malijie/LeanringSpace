@@ -54,7 +54,7 @@ public class MyExpandableListAdapter extends BaseExpandableListAdapter {
     public MyExpandableListAdapter(ExpandableListView expandListView,Fragment fragment){
         mExpandListView = expandListView;
         mFragment = fragment;
-        mPayManager = PayManager.getInstace(getActivity());
+        mPayManager = PayManager.getInstance(getActivity());
     }
 
     private String[] mSubjects = new String[]{

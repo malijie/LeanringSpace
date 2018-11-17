@@ -219,7 +219,7 @@ public class VideoLearningFragment extends Fragment{
     }
 
     private void initData(){
-        mPayManager = PayManager.getInstace(getActivity());
+        mPayManager = PayManager.getInstance(getActivity());
     }
 
 
