@@ -133,8 +133,8 @@ public class Math3Fragment extends BaseFragment{
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (i > 1) {
-                        if (!mPayManager.hasPayedMathVideo()) {
+                    if (i >= 1) {
+                        if (!mPayManager.hasPayedMath3Video()) {
                             showPayTip();
                         } else {
                             if (PermissionController.checkPermission(getActivity())) {

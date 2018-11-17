@@ -10,6 +10,10 @@ public class SharedPreferenceUtil {
 	private static final String SP_QUESTION_PROGRESS_KEY = "item";
 	private static final String SP_QUESTION_INIT = "init";
 	private static final String SP_PAY_INFO = "pay_info";
+	private static final String SP_PAY_MATH1_INFO = "pay_math1";
+	private static final String SP_PAY_MATH2_INFO = "pay_math2";
+	private static final String SP_PAY_MATH3_INFO = "pay_math3";
+
 	private static final String PAYED_VIP_KEY = "payed_vip";
 	private static final String PAYED_VIDEO_KEY = "payed_video";
 
@@ -77,6 +81,36 @@ public class SharedPreferenceUtil {
 	}
 
 
+	//=================考研数学=========================
+	public static void savePayedMath1VideoStatus(boolean isPayed){
+		CommonBase.mContext.getSharedPreferences(SP_PAY_MATH1_INFO, Context.MODE_PRIVATE).edit()
+				.putBoolean(PAYED_VIDEO_KEY,isPayed).commit();
+	}
+
+	public static boolean loadPayedMath1VideoStatus(){
+		return CommonBase.mContext.getSharedPreferences(SP_PAY_MATH1_INFO, Context.MODE_PRIVATE)
+				.getBoolean(PAYED_VIDEO_KEY,false);
+	}
+
+	public static void savePayedMath2VideoStatus(boolean isPayed){
+		CommonBase.mContext.getSharedPreferences(SP_PAY_MATH2_INFO, Context.MODE_PRIVATE).edit()
+				.putBoolean(PAYED_VIDEO_KEY,isPayed).commit();
+	}
+
+	public static boolean loadPayedMath2VideoStatus(){
+		return CommonBase.mContext.getSharedPreferences(SP_PAY_MATH2_INFO, Context.MODE_PRIVATE)
+				.getBoolean(PAYED_VIDEO_KEY,false);
+	}
+
+	public static void savePayedMath3VideoStatus(boolean isPayed){
+		CommonBase.mContext.getSharedPreferences(SP_PAY_MATH3_INFO, Context.MODE_PRIVATE).edit()
+				.putBoolean(PAYED_VIDEO_KEY,isPayed).commit();
+	}
+
+	public static boolean loadPayedMath3VideoStatus(){
+		return CommonBase.mContext.getSharedPreferences(SP_PAY_MATH3_INFO, Context.MODE_PRIVATE)
+				.getBoolean(PAYED_VIDEO_KEY,false);
+	}
 
 
 

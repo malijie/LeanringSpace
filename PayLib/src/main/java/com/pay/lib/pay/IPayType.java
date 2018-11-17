@@ -7,8 +7,10 @@ package com.pay.lib.pay;
 public interface IPayType {
     int POLITICS_QUESTION = 1;
     int POLITICS_VIDEO = 2;
-    int MATH_VIDEO = 3;
 
+    int MATH1_VIDEO = 3;
+    int MATH2_VIDEO = 4;
+    int MATH3_VIDEO = 5;
 
     void payForPoliticsVideo();
     void payForPoliticsQuestions();

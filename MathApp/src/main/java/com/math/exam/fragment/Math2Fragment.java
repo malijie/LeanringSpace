@@ -115,8 +115,8 @@ public class Math2Fragment extends BaseFragment{
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (i > 1) {
-                        if (!mPayManager.hasPayedMathVideo()) {
+                    if (i >= 1) {
+                        if (!mPayManager.hasPayedMath2Video()) {
                             showPayTip();
                         } else {
                             if (PermissionController.checkPermission(getActivity())) {

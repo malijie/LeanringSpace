@@ -25,15 +25,15 @@ public class PayBaseInfo {
     //考研数学-高等数学-名师强化
     public static final String ITEM_MATH1_VIDEO = "2019考研数学名师基础强化-高等数学";
     public static final String ITEM_MATH1_VIDEO_DESCR = "张宇老师主讲限时优惠，仅售39￥";
-    public static final float MATH1_VIDEO_PRICE = 39f;
+    public static final float MATH1_VIDEO_PRICE = 0.01f;
 
     //考研数学-线性代数-名师强化
     public static final String ITEM_MATH2_VIDEO = "2019考研数学名师基础强化-线性代数";
     public static final String ITEM_MATH2_VIDEO_DESCR = "李永乐老师主讲限时优惠，仅售39￥";
-    public static final float MATH2_VIDEO_PRICE = 39f;
+    public static final float MATH2_VIDEO_PRICE = 0.01f;
 
     //考研数学-概率统计-名师强化
-    public static final String ITEM_MATH3_VIDEO = "2019考研数学名师基础强化-高等数学";
+    public static final String ITEM_MATH3_VIDEO = "2019考研数学名师基础强化-概率与统计";
     public static final String ITEM_MATH3_VIDEO_DESCR = "汤家凤老师主讲限时优惠，仅售39￥";
-    public static final float MATH3_VIDEO_PRICE = 39f;
+    public static final float MATH3_VIDEO_PRICE = 0.01f;
 }

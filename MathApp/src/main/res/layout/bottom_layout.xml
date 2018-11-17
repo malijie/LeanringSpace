@@ -81,12 +81,12 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true">
 
-                <ImageView
+0                 <ImageView
                     android:id="@+id/math3_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/math3_normal" />
+                    android:src="@mipmap/math3_nomal" />
 
                 <TextView
                     android:id="@+id/math3_text"
@@ -115,7 +115,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/user_unselected" />
+                    android:src="@mipmap/user_normal" />
 
                 <TextView
                     android:id="@+id/user_text"

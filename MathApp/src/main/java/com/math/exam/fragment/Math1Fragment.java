@@ -18,11 +18,9 @@ import com.common.lib.util.ToastManager;
 import com.common.lib.util.Utils;
 import com.dl7.player.activity.IjkFullscreenActivity;
 import com.dl7.player.entity.VideoInfo;
-import com.math.exam.MathApp;
 import com.math.exam.R;
 import com.math.exam.base.Data;
 import com.pay.lib.pay.PayBaseInfo;
-import com.pay.lib.pay.PayManager;
 
 /**
  * Created by malijie on 2018/10/25.
@@ -113,8 +111,8 @@ public class Math1Fragment extends BaseFragment {
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (i > 1) {
-                        if (!mPayManager.hasPayedMathVideo()) {
+                    if (i >= 1) {
+                        if (!mPayManager.hasPayedMath1Video()) {
                             showPayTip();
                         } else {
                             if (PermissionController.checkPermission(getActivity())) {

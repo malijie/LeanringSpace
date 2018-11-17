@@ -64,17 +64,17 @@ public class PayManager extends PayBaseInfo implements IPayType {
         switch (type) {
             case PayBaseInfo.MATH1:
                 mPayConnect.pay(ctx, orderId, userId, MATH1_VIDEO_PRICE,
-                        ITEM_MATH1_VIDEO, ITEM_MATH1_VIDEO_DESCR, "", new MyPayResultListener(MATH_VIDEO));
+                        ITEM_MATH1_VIDEO, ITEM_MATH1_VIDEO_DESCR, "", new MyPayResultListener(MATH1_VIDEO));
 
                 break;
             case PayBaseInfo.MATH2:
                 mPayConnect.pay(ctx, orderId, userId, MATH2_VIDEO_PRICE,
-                        ITEM_MATH2_VIDEO, ITEM_MATH2_VIDEO_DESCR, "", new MyPayResultListener(MATH_VIDEO));
+                        ITEM_MATH2_VIDEO, ITEM_MATH2_VIDEO_DESCR, "", new MyPayResultListener(MATH2_VIDEO));
 
                 break;
             case PayBaseInfo.MATH3:
                 mPayConnect.pay(ctx, orderId, userId, MATH3_VIDEO_PRICE,
-                        ITEM_MATH3_VIDEO, ITEM_MATH3_VIDEO_DESCR, "", new MyPayResultListener(MATH_VIDEO));
+                        ITEM_MATH3_VIDEO, ITEM_MATH3_VIDEO_DESCR, "", new MyPayResultListener(MATH3_VIDEO));
 
                 break;
         }
@@ -82,12 +82,31 @@ public class PayManager extends PayBaseInfo implements IPayType {
     }
 
     /**
-     * 是否购买过视频服务
+     * 是否购买过高等数学视频服务
      *
      * @return
      */
-    public boolean hasPayedMathVideo() {
-        return SharedPreferenceUtil.loadPayedVideoStatus();
+    public boolean hasPayedMath1Video() {
+        return SharedPreferenceUtil.loadPayedMath1VideoStatus();
+    }
+
+    /**
+     * 是否购买过线性代数视频服务
+     *
+     * @return
+     */
+    public boolean hasPayedMath2Video() {
+        return SharedPreferenceUtil.loadPayedMath2VideoStatus();
+    }
+
+
+    /**
+     * 是否购买过概率视频服务
+     *
+     * @return
+     */
+    public boolean hasPayedMath3Video() {
+        return SharedPreferenceUtil.loadPayedMath3VideoStatus();
     }
 
     private class MyPayResultListener implements PayResultListener {
@@ -115,10 +134,15 @@ public class PayManager extends PayBaseInfo implements IPayType {
                 } else if (payGoods == POLITICS_VIDEO) {
                     //政治视频
                     SharedPreferenceUtil.savePayedVideoStatus(true);
-                } else if (payGoods == MATH_VIDEO) {
-                    //数学视频
-                    SharedPreferenceUtil.savePayedVideoStatus(true);
-
+                } else if (payGoods == MATH1_VIDEO) {
+                    //高等数学
+                    SharedPreferenceUtil.savePayedMath1VideoStatus(true);
+                }else if(payGoods == MATH2_VIDEO){
+                    //线性代数
+                    SharedPreferenceUtil.savePayedMath2VideoStatus(true);
+                }else if(payGoods == MATH3_VIDEO){
+                    //概率
+                    SharedPreferenceUtil.savePayedMath3VideoStatus(true);
                 }
             } else {
                 ToastManager.showShortMsg("购买失败");
