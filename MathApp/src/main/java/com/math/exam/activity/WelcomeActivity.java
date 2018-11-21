@@ -11,6 +11,7 @@ import android.widget.ImageView;
 
 import com.common.lib.util.IntentManager;
 import com.math.exam.R;
+import com.pay.lib.pay.PayManager;
 
 
 /**
@@ -25,7 +26,7 @@ public class WelcomeActivity extends FragmentActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.setContentView(R.layout.welcome_layout);
-
+        PayManager.getInstance(this);
         initViews();
     }
 

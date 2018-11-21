@@ -36,11 +36,11 @@ public class AboutActivity extends BaseActivity{
     @Override
     public void initViews() {
         String content =
-                "<p>1. 本app包含了2019考研数学专家组名师在线课程</p>" +
-                "<p>2. 高等数学-张宇，启航考研数学老师，从事高等数学教学和考研辅导多年，在全国核心期刊发表论文多篇</p>" +
-                "<p>3. 线性代数，李永乐，全国最著名的考研数学线性代数辅导专家，有线代王之称。</p>" +
-                "<p>4. 概率与数理统计，汤家凤，连续20年从事考研数学教学和命题研究工作，每年都全程指导出大量高分甚至满分学生</p>" +
-                "<p>5. 联系邮箱：190223629@qq.com</p>";;
+                "<p>1. 本app包含了2019考研数学专家组名师在线课程，助力考研学子数学高分</p>" +
+                        "<p>2. 高等数学-张宇，启航考研数学老师，从事高等数学教学和考研辅导多年，在全国核心期刊发表论文多篇</p>" +
+                        "<p>3. 线性代数-李永乐，全国最著名的考研数学线性代数辅导专家，有线代王之称。</p>" +
+                        "<p>4. 概率与数理统计-汤家凤，连续20年从事考研数学教学和命题研究工作，辅导出个多个满分学员</p>" +
+                        "<p>5. 联系邮箱：190223629@qq.com</p>";
         mTextAbout = (TextView) findViewById(R.id.id_about_text_content);
         mButtonBack = (ImageButton) findViewById(R.id.id_title_bar_button_back);
         mTextTitle = (TextView) findViewById(R.id.id_title_bar_text_title);

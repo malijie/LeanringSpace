@@ -120,7 +120,7 @@ public class Math2Fragment extends BaseFragment{
                     videoInfo.setUrl(VIDEO_URL[i]);
                     videoInfo.setName(VIDEO_ITEM[i]);
 
-                    if (i >= 1) {
+                    if (i >= 2) {
                         if (!mPayManager.hasPayedMath2Video()) {
                             showPayTip();
                         } else {

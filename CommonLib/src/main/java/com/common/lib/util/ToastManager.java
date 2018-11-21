@@ -23,7 +23,7 @@ public class ToastManager {
     }
 
     public static void showExitTipMsg(){
-        ToastUtil.showMsg(Utils.getString(R.string.exit_tip), Toast.LENGTH_SHORT);
+        ToastUtil.showMsg(Utils.getString(R.string.exit_math_tip), Toast.LENGTH_SHORT);
     }
 
 }
