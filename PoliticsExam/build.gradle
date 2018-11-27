@@ -52,17 +52,10 @@ android {
 
     }
 
-    dependencies {
-        compile fileTree(include: ['*.jar'], dir: 'libs')
-
-        compile project(':PayLib')
-        compile project(':playerview')
-        compile 'com.github.Rukey7:IjkPlayerView:1.0.4'
-
-    }
 }
 
 dependencies {
-    compile project(':PayLib')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':PayLib')
     implementation project(':playerview')
 }

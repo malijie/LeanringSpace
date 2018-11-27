@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.common.lib.base.BaseActivity;
 import com.politics.exam.R;
 import com.politics.exam.db.operator.BaseOperator;
 
@@ -14,7 +15,7 @@ import com.politics.exam.db.operator.BaseOperator;
  * Created by malijie on 2017/8/25.
  */
 
-public class ExamDetailActivity extends BaseActivity{
+public class ExamDetailActivity extends BaseActivity {
 
     private TextView mText = null;
     private TextView mTextTitle = null;

@@ -949,7 +949,7 @@ public class IjkPlayerView extends FrameLayout implements View.OnClickListener {
             if (mDanmakuListener == null || mDanmakuListener.isValid()) {
                 editVideo();
                 mEditDanmakuLayout.setVisibility(VISIBLE);
-                SoftInputUtils.setEditFocusable(mAttachActivity, mEtDanmakuContent);
+//                SoftInputUtils.setEditFocusable(mAttachActivity, mEtDanmakuContent);
             }
         } else if (id == R.id.iv_cancel_send) {
             recoverFromEditVideo();

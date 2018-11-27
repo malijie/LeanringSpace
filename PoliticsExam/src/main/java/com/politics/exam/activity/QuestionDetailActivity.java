@@ -8,13 +8,19 @@ import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.Spanned;
 import android.text.TextUtils;
+import android.text.style.AbsoluteSizeSpan;
+import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.common.lib.base.BaseActivity;
 import com.common.lib.util.IntentManager;
 import com.common.lib.util.SharedPreferenceUtil;
 import com.common.lib.util.Utils;
@@ -23,6 +29,7 @@ import com.politics.exam.business.AnswerMethod;
 import com.politics.exam.business.MultiSelectionMethod;
 import com.politics.exam.business.SelectionMethod;
 import com.politics.exam.business.SingleSelectionMethod;
+import com.politics.exam.db.operator.BaseOperator;
 import com.politics.exam.db.operator.ChapterMYDBOperator;
 import com.politics.exam.db.operator.ChapterMZTDBOperator;
 import com.politics.exam.db.operator.ChapterSGDBOperator;
@@ -43,7 +50,7 @@ import java.util.List;
  * Created by malijie on 2017/5/27.
  */
 
-public class QuestionDetailActivity extends BaseActivity{
+public class QuestionDetailActivity extends BaseActivity {
     private static final int MSG_SAVE_PROGRESS = 0X0001;
 
     private ViewPager mViewPager = null;
@@ -423,5 +430,24 @@ public class QuestionDetailActivity extends BaseActivity{
         }
     };
 
+    public BaseOperator mDB =  new BaseOperator();
 
+    public SpannableString getContentStyle(int questionNo, String textFrom, String textTitle){
+        String content= questionNo  + "." + textFrom + textTitle;
+        SpannableString textSpan = new SpannableString (content);
+
+        int start = content.indexOf("（");
+        int end = content.indexOf("）");
+        if(start<=0 || end<=0){
+            return textSpan;
+        }
+
+
+        textSpan.setSpan(new ForegroundColorSpan(Utils.getColor(R.color.font_yellow)),
+                start,end+1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textSpan.setSpan(new AbsoluteSizeSpan(40),start,end+1, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        return textSpan;
+    }
 }

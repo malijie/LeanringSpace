@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.common.lib.base.BaseActivity;
 import com.common.lib.util.ToastManager;
 import com.common.lib.util.PermissionController;
 import com.pay.lib.wap.WapManager;

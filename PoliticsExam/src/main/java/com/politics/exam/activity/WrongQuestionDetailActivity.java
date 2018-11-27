@@ -14,11 +14,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.common.lib.base.BaseActivity;
 import com.common.lib.util.ToastManager;
 import com.common.lib.util.Utils;
 import com.politics.exam.R;
 import com.politics.exam.business.IAnswerMethod;
 import com.politics.exam.business.SelectionMethod;
+import com.politics.exam.db.operator.BaseOperator;
 import com.politics.exam.entity.WrongQuestionInfo;
 import com.politics.exam.widget.CustomDialog;
 
@@ -56,6 +58,28 @@ public class WrongQuestionDetailActivity extends BaseActivity implements IAnswer
     private WrongQuestionInfo wrongQuestionInfo = null;
     private List<WrongQuestionInfo> wrongQuestionInfos;
     private int index = 0;
+
+
+    public BaseOperator mDB =  new BaseOperator();
+
+    public SpannableString getContentStyle(int questionNo, String textFrom, String textTitle){
+        String content= questionNo  + "." + textFrom + textTitle;
+        SpannableString textSpan = new SpannableString (content);
+
+        int start = content.indexOf("（");
+        int end = content.indexOf("）");
+        if(start<=0 || end<=0){
+            return textSpan;
+        }
+
+
+        textSpan.setSpan(new ForegroundColorSpan(Utils.getColor(R.color.font_yellow)),
+                start,end+1, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        textSpan.setSpan(new AbsoluteSizeSpan(40),start,end+1,Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        return textSpan;
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

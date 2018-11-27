@@ -1,20 +1,10 @@
-package com.math.exam.activity;
+package com.common.lib.base;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.text.Spannable;
-import android.text.SpannableString;
-import android.text.SpannableStringBuilder;
-import android.text.Spanned;
-import android.text.style.AbsoluteSizeSpan;
-import android.text.style.ForegroundColorSpan;
-import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TextView;
 
-import com.common.lib.base.CommonBase;
 import com.common.lib.util.IntentManager;
 import com.common.lib.util.SharedPreferenceUtil;
 import com.common.lib.util.Utils;
