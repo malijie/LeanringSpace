@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.common.lib.base.BaseActivity;
 import com.math.exam.R;
 
 
@@ -14,7 +15,7 @@ import com.math.exam.R;
  * Created by malijie on 2017/8/30.
  */
 
-public class AboutActivity extends BaseActivity{
+public class AboutActivity extends BaseActivity {
     private TextView mTextAbout = null;
     private ImageButton mButtonBack = null;
     private TextView mTextTitle = null;
